@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B760F692-21A8-4853-AA9B-C4BF46368912}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SportCity_Test</RootNamespace>
+    <AssemblyName>SportCity_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCambiarPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCambiarPass.Designer.cs">
+      <DependentUpon>FormCambiarPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCuotas.Designer.cs">
+      <DependentUpon>FormCuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstado_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstado_Usuario.Designer.cs">
+      <DependentUpon>FormEstado_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfil.Designer.cs">
+      <DependentUpon>FormPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipalAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipalAdmin.Designer.cs">
+      <DependentUpon>FormPrincipalAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRol.Designer.cs">
+      <DependentUpon>FormRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FomCompletado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FomCompletado.Designer.cs">
+      <DependentUpon>FomCompletado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormBaseInvocado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormBaseInvocado.Designer.cs">
+      <DependentUpon>FormBaseInvocado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormbaseLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormbaseLogin.Designer.cs">
+      <DependentUpon>FormbaseLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormDefault.Designer.cs">
+      <DependentUpon>FormDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormError.Designer.cs">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormPregunta.Designer.cs">
+      <DependentUpon>FormPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBases\FormPrincipalBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBases\FormPrincipalBase.Designer.cs">
+      <DependentUpon>FormPrincipalBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormCambiarPass.resx">
+      <DependentUpon>FormCambiarPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCuotas.resx">
+      <DependentUpon>FormCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstado_Usuario.resx">
+      <DependentUpon>FormEstado_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfil.resx">
+      <DependentUpon>FormPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipalAdmin.resx">
+      <DependentUpon>FormPrincipalAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol.resx">
+      <DependentUpon>FormRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FomCompletado.resx">
+      <DependentUpon>FomCompletado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormBaseInvocado.resx">
+      <DependentUpon>FormBaseInvocado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormbaseLogin.resx">
+      <DependentUpon>FormbaseLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormDefault.resx">
+      <DependentUpon>FormDefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormError.resx">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormPregunta.resx">
+      <DependentUpon>FormPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBases\FormPrincipalBase.resx">
+      <DependentUpon>FormPrincipalBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{62291ab5-f609-4dc4-a4a4-690c672efec4}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{57506ce2-4036-458e-b667-d0c1b1b5b59b}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Logo.ico" />
+    <Content Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
